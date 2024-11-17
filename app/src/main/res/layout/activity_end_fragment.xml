@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Form"
+            android:textSize="20sp"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_emp_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Employee ID"/>
+
+            <Button
+                android:id="@+id/button_scan_emp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"/>
+        </LinearLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/input_end_voltage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="End Voltage in Volts"-->
+<!--            android:inputType="numberDecimal"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/input_flight_time"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Flight Time in minutes"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="3"/> &lt;!&ndash; Limits text length to 3 characters &ndash;&gt;-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/input_flight_area"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Flight Area in sq/km"-->
+<!--            android:inputType="numberDecimal"/>-->
+
+        <Button
+            android:id="@+id/button_submit_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+    </LinearLayout>
+</FrameLayout>

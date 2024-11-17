@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start Form:"-->
+<!--        android:textSize="20sp"-->
+<!--        android:paddingBottom="16dp"-->
+<!--        android:textStyle="bold"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/button_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:onClick="onRefreshButtonClick" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:text="Display Form Type Here: "
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Select Project: "
+            android:layout_marginBottom="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/project_names"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drone ID: "
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_drone_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Drone ID"/>
+
+        <Button
+            android:id="@+id/button_scan_drone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery ID: "
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_battery_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Battery ID"/>
+
+        <Button
+            android:id="@+id/button_scan_battery_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Voltage: "
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/input_start_voltage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Volts"
+        android:inputType="numberDecimal" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Voltage: "
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_end_voltage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Volts"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight Time: "
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_flight_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:maxLength="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight Area: "
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/input_flight_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="sq/km"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_submit_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>
