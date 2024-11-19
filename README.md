@@ -10,11 +10,11 @@ ________________________________________
 
 1.	Start and End Journey Forms:
 
-    o	Start Form:
+    o Start Form:
 
 •	Inputs: Project name, drone ID, battery ID, and start voltage.
 
-    o    End Form:
+    o End Form:
 
 •	Inputs: End voltage, total flight time, and total flight area.
 
