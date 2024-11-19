@@ -14,7 +14,7 @@ ________________________________________
 
 •	Inputs: Project name, drone ID, battery ID, and start voltage.
 
-    o	End Form:
+    o    End Form:
 
 •	Inputs: End voltage, total flight time, and total flight area.
 
