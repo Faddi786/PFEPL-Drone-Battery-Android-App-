@@ -11,19 +11,19 @@ ________________________________________
 
 o	Start Form:
 
-	Inputs: Project name, drone ID, battery ID, and start voltage.
+•	Inputs: Project name, drone ID, battery ID, and start voltage.
 
 o	End Form:
 
-	Inputs: End voltage, total flight time, and total flight area.
+•	Inputs: End voltage, total flight time, and total flight area.
 
 2.	Offline working:
 
-	The data of both forms is stored offline then after pressing upload button it verifies network and proceeds to upload data on server
+•	The data of both forms is stored offline then after pressing upload button it verifies network and proceeds to upload data on server
 
 3.	QR Code Scanning: 
 
-	For faster input of drone and battery IDs.
+•	For faster input of drone and battery IDs.
 ________________________________________
 🛠️ Technologies Used
 
@@ -37,10 +37,15 @@ ________________________________________
 
 1.	Simplified Data Entry:
 
-o	Combine the start and end forms into a single unified form for easier data submission.
+•	Combine the start and end forms into a single unified form for easier data submission.
+
 2.	User-Based Login:
-o	Introduce personalized login accounts for users to ensure secure and streamlined access.
+
+•	Introduce personalized login accounts for users to ensure secure and streamlined access.
+
 3.	Offline Data Storage:
-o	Implement a refresh button to sync and store essential data (e.g., employee, battery, drone, and project details) offline in a Room Database for better usability in remote areas.
+
+•	Implement a refresh button to sync and store essential data (e.g., employee, battery, drone, and project details) offline in a Room Database for better usability in remote areas.
 
 These enhancements aim to improve user experience, reduce complexity, and enhance the app's functionality in offline scenarios.
+
